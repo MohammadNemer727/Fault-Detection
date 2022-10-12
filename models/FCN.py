@@ -145,7 +145,10 @@ l = label_encoder.fit_transform(code)
 test_label = tf.keras.utils.to_categorical(l, num_classes=6)
 
 cvscores=[]
+start_time = time.time()
 fcn.fit(train_data,train_label,test_data,test_label,test_label)
+test_duration = time.time() - start_time
+print(test_duration)
 fcn.model.save('fcn.h5')
 
 # fcn.model.evaluate(test_data, test_label, verbose=0)
