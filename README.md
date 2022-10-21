@@ -34,15 +34,19 @@ And making a simple exploratory analysis, that is what the data extract from the
 ## ResNet
 The residual neural network (ResNet) (ANN). It is a gateless or open-gated variation of the HighwayNet, which was the first functionally complete, extremely deep feedforward neural network with hundreds of layers—much deeper than earlier neural networks. To skip some levels, utilize shortcuts or skip connections (HighwayNets may also learn the skip weights themselves through an additional weight matrix for their gates). Typical ResNet models are constructed using batch normalization in between double- or triple-layer skips that contain ReLU nonlinearities.
 The model architecture can be found here:
-[![Resnet.png](https://i.postimg.cc/BbtJ5Ff1/Resnet.png)](https://postimg.cc/7J8vwf6x)
+[![sas.jpg](https://i.postimg.cc/hGymK9sX/sas.jpg)](https://postimg.cc/d7C3BZzF)
 
 ## FCN
 Fully Convolutional Networks (FCNs) were first developed for segmentation tasks and are extremely effective at extracting features from input data. The FCN utilized for TSC is built by stacking three blocks, each of which consists of a convolutional layer with filters, followed by a batch normalization layer and a ReLU activation layer. Following the first three convolutional blocks, a global average pooling layer is applied to the features, substantially lowering the amount of weights. Finally, the softmax layer generates the final result.
+[![sas-Copy.jpg](https://i.postimg.cc/YSwgXr9S/sas-Copy.jpg)](https://postimg.cc/9DJr0jy3)
 
 ## MLSTM-FCN
 The Multivariate LSTM Fully Convolutional Network has produced the best results on the multivariate UEA archive. which is made up of a fully convolutional block and an LSTM block. The input multivariate time series is sent via a shuffle layer before being passed through an LSTM block with an attention mechanism followed by dropout. The output of the attention LSTM layer is concatenated with the output of the global pooling layer, and the final results are generated from the softmax layer. The inclusion of the squeeze and excite blocks provided by the authors, as well as the introduction of a feed forward link from one layer to all successive layers, is an interesting approach adopted by the authors.
+[![MLSTMFCN-Copy.jpg](https://i.postimg.cc/9FKNQ7xN/MLSTMFCN-Copy.jpg)](https://postimg.cc/zVwkdVYn)
 ## LSTM
-This model was adapted to our problem and has been modified to be able to classify the 6 classes of the dataset
+This model was adapted to our problem and has been modified to be able to classify the 6 classes of the dataset.
+[![Lstm.jpg](https://i.postimg.cc/yxPszTh5/Lstm.jpg)](https://postimg.cc/0KbLYDBd)
 
 ## Inceprion Time
 The InceptionTime model is composed of five inception networks, with each prediction weighted equally, which is quite similar to the behavior of ResNet. The classifiers in the Inception network consist of two distinct residual blocks, unlike ResNet, which consists of three blocks. Each block in the inception network consists of three Inception modules rather than standard fully convolutional layers. The input of each residual block is sent to the input of the next block via a shortcut linear connection , which minimizes the vanishing gradient problem by allowing a direct flow of the gradient. The InceptionTime model is mainly used for time series classification.
+[![inception-Time.png](https://i.postimg.cc/jjz19S43/inception-Time.png)](https://postimg.cc/06yZKx37)
