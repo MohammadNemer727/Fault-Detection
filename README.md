@@ -34,6 +34,7 @@ And making a simple exploratory analysis, that is what the data extract from the
 ## ResNet
 The residual neural network (ResNet) (ANN). It is a gateless or open-gated variation of the HighwayNet, which was the first functionally complete, extremely deep feedforward neural network with hundreds of layers—much deeper than earlier neural networks. To skip some levels, utilize shortcuts or skip connections (HighwayNets may also learn the skip weights themselves through an additional weight matrix for their gates). Typical ResNet models are constructed using batch normalization in between double- or triple-layer skips that contain ReLU nonlinearities.
 The model architecture can be found here:
+[![Resnet.png](https://i.postimg.cc/BbtJ5Ff1/Resnet.png)](https://postimg.cc/7J8vwf6x)
 
 ## FCN
 Fully Convolutional Networks (FCNs) were first developed for segmentation tasks and are extremely effective at extracting features from input data. The FCN utilized for TSC is built by stacking three blocks, each of which consists of a convolutional layer with filters, followed by a batch normalization layer and a ReLU activation layer. Following the first three convolutional blocks, a global average pooling layer is applied to the features, substantially lowering the amount of weights. Finally, the softmax layer generates the final result.
