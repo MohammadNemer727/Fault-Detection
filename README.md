@@ -1,6 +1,6 @@
 # Fault-Detection
 
-#Dataset
+# Dataset
 ## Description:
 
 Based on the [MAFAULDA](http://www02.smt.ufrj.br/~offshore/mfs/page_01.html) project datased available also on [ Kaggle - Machinery Fault Dataset](https://www.kaggle.com/uysalserkan/fault-induction-motor-dataset)
@@ -27,3 +27,15 @@ The database is composed by several CSV (Comma-Separated Values) files, each one
 And making a simple exploratory analysis, that is what the data extract from the columns 2 to 7 looks like:
 
 ![Dataset](https://fantinatti.com/ds/Dataset.gif)
+
+# Models used
+
+## ResNet
+
+## FCN
+
+## MLSTM-FCN
+
+## LSTM
+
+## Inceprion Time
