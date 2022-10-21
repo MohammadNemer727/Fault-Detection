@@ -56,4 +56,4 @@ This model was adapted to our problem and has been modified to be able to classi
 ## Inceprion Time
 The InceptionTime model is composed of five inception networks, with each prediction weighted equally, which is quite similar to the behavior of ResNet. The classifiers in the Inception network consist of two distinct residual blocks, unlike ResNet, which consists of three blocks. Each block in the inception network consists of three Inception modules rather than standard fully convolutional layers. The input of each residual block is sent to the input of the next block via a shortcut linear connection , which minimizes the vanishing gradient problem by allowing a direct flow of the gradient. The InceptionTime model is mainly used for time series classification.
 
-[url=https://postimg.cc/JGQbNvjx][img]https://i.postimg.cc/JGQbNvjx/asdasd.jpg[/img][/url]
+[![asdasd.jpg](https://i.postimg.cc/Prg2jkxg/asdasd.jpg)](https://postimg.cc/JGQbNvjx)
