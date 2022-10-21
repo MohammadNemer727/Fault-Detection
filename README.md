@@ -4,7 +4,7 @@
 ## Description:
 
 Based on the [MAFAULDA](http://www02.smt.ufrj.br/~offshore/mfs/page_01.html) project datased available also on [ Kaggle - Machinery Fault Dataset](https://www.kaggle.com/uysalserkan/fault-induction-motor-dataset)
-(https://pdfhost.io/v/lZDqRyGIo_resnetfcndrawio)
+
 This database comprises on samples taken from a rate of 50 kHz scanning A/D device using the SpectraQuest Inc. Alignment/Balance Vibration Trainer (ABVT) Machinery Fault Simulator (MFS) as shown below:
 ![Machinery Fault Simulator](https://spectraquest.com/spectraquest/images/products/main/MFS.jpg)
 Source: [Machine Fault Simulator](https://spectraquest.com/machinery-fault-simulator/details/mfs/)
